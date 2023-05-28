@@ -1,9 +1,11 @@
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class RegistrationController extends GetxController {
   //TODO: Implement RegistrationController
-
+  final formKey = GlobalKey<FormState>();
   final count = 0.obs;
+
   @override
   void onInit() {
     super.onInit();

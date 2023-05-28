@@ -6,7 +6,7 @@ import 'constant_value.dart';
 
 class AllTextStyle {
   textRegularStyle({
-    color = AllColors.pureBlack,
+    color = AllColors.pureBlackColor,
     double fontSize = fontSize14,
     fontWeight = FontWeight.w400,
   }) {
@@ -18,7 +18,7 @@ class AllTextStyle {
   }
 
   textRegularStyle16({
-    color = AllColors.pureBlack,
+    color = AllColors.pureBlackColor,
     double fontSize = fontSize16,
     fontWeight = FontWeight.w500,
   }) {
@@ -30,8 +30,8 @@ class AllTextStyle {
   }
 
   textRegularStyle20({
-    color = AllColors.pureBlack,
-    double fontSize = fontSize36,
+    color = AllColors.pureBlackColor,
+    double fontSize = fontSize22,
     fontWeight = FontWeight.bold,
   }) {
     return TextStyle(

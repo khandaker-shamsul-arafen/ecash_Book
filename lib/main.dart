@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
         return GetMaterialApp(
           initialRoute: AppPages.INITIAL,
           getPages: AppPages.routes,
-          title: 'Medicine  App',
+          title: 'eCash Book',
           debugShowCheckedModeBanner: false,
           theme: ThemeData(
             colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
