@@ -3,6 +3,10 @@ import 'package:get/get.dart';
 
 class RegistrationController extends GetxController {
   //TODO: Implement RegistrationController
+  final TextEditingController name = TextEditingController();
+  final TextEditingController phone = TextEditingController();
+  final TextEditingController email = TextEditingController();
+  final TextEditingController address = TextEditingController();
   final formKey = GlobalKey<FormState>();
   final count = 0.obs;
 
