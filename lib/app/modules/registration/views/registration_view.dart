@@ -8,6 +8,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:validatorless/validatorless.dart';
 
+import '../../../routes/app_pages.dart';
 import '../controllers/registration_controller.dart';
 
 class RegistrationView extends GetView<RegistrationController> {
@@ -113,6 +114,7 @@ class RegistrationView extends GetView<RegistrationController> {
                             contentPadding: EdgeInsets.all(10.r),
                             labelText: 'Email',
                           ),
+                          keyboardType: TextInputType.emailAddress,
                         ),
                         ConstantWidget().gapeH16(),
                         TextFormField(
@@ -168,7 +170,7 @@ class RegistrationView extends GetView<RegistrationController> {
                         if (controller.formKey.currentState!.validate()) {
                           print('Valid');
                         } else {
-                          print('Invalid');
+                          Get.toNamed(Routes.DASH_BOARD);
                         }
 
                         // Navigator.pushNamed(context, AppRouter.otpPage);

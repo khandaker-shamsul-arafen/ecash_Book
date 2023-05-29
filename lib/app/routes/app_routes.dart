@@ -3,10 +3,16 @@ part of 'app_pages.dart';
 
 abstract class Routes {
   Routes._();
+
   static const REGISTRATION = _Paths.REGISTRATION;
+  static const DASH_BOARD = _Paths.DASH_BOARD;
+  static const GIVE = _Paths.GIVE;
 }
 
 abstract class _Paths {
   _Paths._();
+
   static const REGISTRATION = '/registration';
+  static const DASH_BOARD = '/dash-board';
+  static const GIVE = '/give';
 }
