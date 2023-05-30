@@ -1,5 +1,7 @@
 import 'package:get/get.dart';
 
+import '../modules/add/bindings/add_binding.dart';
+import '../modules/add/views/add_view.dart';
 import '../modules/dash_board/bindings/dash_board_binding.dart';
 import '../modules/dash_board/views/dash_board_view.dart';
 import '../modules/give/bindings/give_binding.dart';
@@ -29,6 +31,11 @@ class AppPages {
       name: _Paths.GIVE,
       page: () => const GiveView(),
       binding: GiveBinding(),
+    ),
+    GetPage(
+      name: _Paths.ADD,
+      page: () => const AddView(),
+      binding: AddBinding(),
     ),
   ];
 }
