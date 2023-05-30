@@ -8,6 +8,7 @@ abstract class Routes {
   static const DASH_BOARD = _Paths.DASH_BOARD;
   static const GIVE = _Paths.GIVE;
   static const ADD = _Paths.ADD;
+  static const SPLASH_SCREEN = _Paths.SPLASH_SCREEN;
 }
 
 abstract class _Paths {
@@ -17,4 +18,5 @@ abstract class _Paths {
   static const DASH_BOARD = '/dash-board';
   static const GIVE = '/give';
   static const ADD = '/add';
+  static const SPLASH_SCREEN = '/splash-screen';
 }

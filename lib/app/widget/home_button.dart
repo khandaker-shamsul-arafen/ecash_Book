@@ -1,4 +1,5 @@
 import 'package:ecash_book/app/constants/all_color.dart';
+import 'package:ecash_book/app/constants/text_style.dart';
 import 'package:flutter/material.dart';
 
 class HomeButton extends StatelessWidget {
@@ -20,13 +21,17 @@ class HomeButton extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
-          color: AllColors.primaryLightColor,
+          color: AllColors.primaryColor,
         ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Icon(Icons.shopping_cart), // <-- Icon
-            Text(text), // <-- Text
+            icon, // <-- Icon
+            Text(
+              text,
+              style: AllTextStyle()
+                  .textRegularStyle20(color: AllColors.pureWhiteColor),
+            ), // <-- Text
           ],
         ),
       ),

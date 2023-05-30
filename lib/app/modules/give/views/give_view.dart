@@ -18,7 +18,8 @@ class GiveView extends GetView<GiveController> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          title: const Text(''),
+          leading: Icon(Icons.add),
+          title: const Text('fwerewrre'),
           centerTitle: true,
         ),
         body: Padding(
@@ -136,17 +137,18 @@ class GiveView extends GetView<GiveController> {
                   )),
               ConstantWidget().gapeH16(),
               ElevatedButton(
-                  onPressed: () {},
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: AllColors.primaryColor.withOpacity(0.8),
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10.0)),
-                  ),
-                  child: Text(
-                    'Search',
-                    style: AllTextStyle()
-                        .textRegularStyle16(color: AllColors.pureWhiteColor),
-                  ))
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: AllColors.primaryColor.withOpacity(0.8),
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10.0)),
+                ),
+                child: Text(
+                  'Search',
+                  style: AllTextStyle()
+                      .textRegularStyle16(color: AllColors.pureWhiteColor),
+                ),
+              )
             ],
           ),
         ),

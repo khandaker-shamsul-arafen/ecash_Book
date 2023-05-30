@@ -25,7 +25,6 @@ class AddView extends GetView<AddController> {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // datePick(context, controller.startDate.value),
             Obx(
               () {
                 return Container(
@@ -59,14 +58,8 @@ class AddView extends GetView<AddController> {
             TextField(
               controller: controller.nameOfReceiver,
               decoration: const InputDecoration(
-                // prefixIcon: Icon(Icons.person),
-                labelText: "NameOfReceiver",
-                border: const OutlineInputBorder(),
-                // errorText: (controller.name.text.isEmpty)
-                //     ? controller.nameValidate.value
-                //         ? 'Name Can\'t Be Empty'
-                //         : null
-                //     : null,
+                labelText: "Name Of Receiver",
+                border: OutlineInputBorder(),
               ),
               keyboardType: TextInputType.name,
             ),
@@ -74,14 +67,8 @@ class AddView extends GetView<AddController> {
             TextField(
                 controller: controller.amount,
                 decoration: const InputDecoration(
-                  //  prefixIcon: Icon(Icons.person),
                   labelText: "Amount",
                   border: const OutlineInputBorder(),
-                  // errorText: (controller.name.text.isEmpty)
-                  //     ? controller.nameValidate.value
-                  //         ? 'Name Can\'t Be Empty'
-                  //         : null
-                  //     : null,
                 ),
                 keyboardType: TextInputType.number),
             ConstantWidget().gapeH16(),
@@ -112,9 +99,7 @@ class AddView extends GetView<AddController> {
                         padding: EdgeInsets.symmetric(
                             vertical: 16.h, horizontal: 16.w),
                         backgroundColor: AllColors.primaryColor),
-                    onPressed: () {
-                      // Navigator.pushNamed(context, AppRouter.otpPage);
-                    },
+                    onPressed: () {},
                     child: Text(
                       'Save',
                       style: AllTextStyle().textRegularStyle16(
